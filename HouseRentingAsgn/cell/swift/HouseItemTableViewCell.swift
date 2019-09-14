@@ -27,6 +27,7 @@ class HouseItemTableViewCell: UITableViewCell {
     
     @IBOutlet weak var viewbottom: UIView!
     
+    @IBOutlet weak var imgGoToDetail: UIImageView!
     var delegate: HouseListItemActionDelegate?
     
     var house: HouseVO? {
@@ -45,6 +46,11 @@ class HouseItemTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
+        viewGoToDetail.layer.cornerRadius = viewGoToDetail.bounds.height / 2
+        imgGoToDetail.layer.cornerRadius = imgGoToDetail.bounds.height / 2
+        viewPrice.layer.cornerRadius = 10
+        imgHouse.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        imgHouse.layer.cornerRadius = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

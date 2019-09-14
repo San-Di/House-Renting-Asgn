@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,15 +25,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5R4-X8-92U">
                                 <rect key="frame" x="187" y="57.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjJ-41-RyE">
-                                <rect key="frame" x="203" y="86" width="10" height="10"/>
-                                <color key="backgroundColor" name="primaryBlueColor"/>
+                                <rect key="frame" x="205" y="86" width="6" height="6"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="10" id="jzh-gw-voU"/>
-                                    <constraint firstAttribute="height" constant="10" id="nzi-dC-VMk"/>
+                                    <constraint firstAttribute="width" constant="6" id="jzh-gw-voU"/>
+                                    <constraint firstAttribute="height" constant="6" id="nzi-dC-VMk"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -64,9 +63,4 @@
             <point key="canvasLocation" x="402.89855072463769" y="172.43303571428569"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <namedColor name="primaryBlueColor">
-            <color red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>

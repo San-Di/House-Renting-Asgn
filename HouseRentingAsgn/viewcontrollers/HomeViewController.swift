@@ -12,15 +12,21 @@ class HomeViewController: UIViewController {
     
     static let identifier = "HomeViewController"
     
+    let menuList = ["Top Collection", "Near me", "Low to High price"]
+    
     @IBOutlet weak var menuCollectionView: UICollectionView!
     
     @IBOutlet weak var houseListTableView: UITableView!
+    @IBOutlet weak var txtSearchField: UITextField!
+    
+    @IBOutlet weak var viewSearchField: UIView!
     
     let numberOfItemPerRow: CGFloat = 3
-    let spacingPerItem: CGFloat = 20
+    let spacingPerItem: CGFloat = 8
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtSearchField.borderStyle = .none
         getMovieList()
         menuCollectionView.delegate = self
         menuCollectionView.dataSource = self
@@ -58,19 +64,34 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return menuList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let menuItem = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MenuItemCollectionViewCell.self), for: indexPath ) as! MenuItemCollectionViewCell
-        
+        menuItem.mData = menuList[indexPath.row]
         return menuItem
     }
     
 }
 
 extension HomeViewController: UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
+        
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! MenuItemCollectionViewCell
+        cell.labelMenuItem.textColor = UIColor.black
+        cell.viewMenuIndicator.backgroundColor = #colorLiteral(red: 0.5818830132, green: 0.2156915367, blue: 1, alpha: 1)
+        collectionView.deselectItem(at: indexPath, animated: true)
+        return true
+    }
     
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! MenuItemCollectionViewCell
+        cell.labelMenuItem.textColor = UIColor.lightGray
+        cell.viewMenuIndicator.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        
+    }
 }
 
 extension HomeViewController: UITableViewDelegate{

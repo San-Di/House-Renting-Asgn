@@ -10,11 +10,12 @@ import UIKit
 
 class HouseRentDetailViewController: UIViewController {
 
+    @IBOutlet weak var txtSearchField: UITextField!
     static let identifier = "HouseRentDetailViewController"
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       txtSearchField.borderStyle = .none
     }
     
 

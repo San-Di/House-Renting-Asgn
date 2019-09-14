@@ -20,7 +20,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="286" height="244"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wi6-Pv-gZx">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wi6-Pv-gZx" customClass="CardView" customModule="HouseRentingAsgn" customModuleProvider="target">
                         <rect key="frame" x="8" y="12" width="270" height="228"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xW7-WB-A4v">
@@ -30,10 +30,10 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uuz-ZA-Ya5">
-                                <rect key="frame" x="16" y="80" width="64" height="24"/>
+                                <rect key="frame" x="16" y="78" width="70" height="26"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaT-1l-8TB">
-                                        <rect key="frame" x="12.5" y="5" width="39" height="14.5"/>
+                                        <rect key="frame" x="15.5" y="6" width="39" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -42,9 +42,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="BaT-1l-8TB" firstAttribute="centerY" secondItem="Uuz-ZA-Ya5" secondAttribute="centerY" id="XUg-YW-h3N"/>
-                                    <constraint firstAttribute="height" constant="24" id="odv-b0-Dqm"/>
+                                    <constraint firstAttribute="height" constant="26" id="odv-b0-Dqm"/>
                                     <constraint firstItem="BaT-1l-8TB" firstAttribute="centerX" secondItem="Uuz-ZA-Ya5" secondAttribute="centerX" id="og8-eK-j7J"/>
-                                    <constraint firstAttribute="width" constant="64" id="yrd-VP-dyW"/>
+                                    <constraint firstAttribute="width" constant="70" id="yrd-VP-dyW"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0l-7y-MnS">
@@ -141,6 +141,23 @@
                             <constraint firstItem="Uuz-ZA-Ya5" firstAttribute="leading" secondItem="xW7-WB-A4v" secondAttribute="leading" constant="16" id="oUf-uh-k7N"/>
                             <constraint firstAttribute="trailing" secondItem="W0l-7y-MnS" secondAttribute="trailing" constant="8" id="q1u-ef-GyV"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidt">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
@@ -152,6 +169,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="imgGoToDetail" destination="eYn-NY-i08" id="41x-6q-yDW"/>
                 <outlet property="imgHouse" destination="xW7-WB-A4v" id="ZKy-GX-u5N"/>
                 <outlet property="labelArea" destination="0ym-go-zLU" id="PFN-oY-cMW"/>
                 <outlet property="labelDecoration" destination="X6P-ON-rfQ" id="cOn-wo-Ekn"/>
