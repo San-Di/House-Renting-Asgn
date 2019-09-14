@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27AA82A4232C8D5100CE609D /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA82A3232C8D5100CE609D /* SharedConstants.swift */; };
+		27AA82A6232C8E8B00CE609D /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA82A5232C8E8B00CE609D /* NetworkClient.swift */; };
+		27AA82AA232C947700CE609D /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA82A9232C947700CE609D /* HouseModel.swift */; };
+		27AA82AF232C953300CE609D /* HouseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA82AE232C953300CE609D /* HouseResponse.swift */; };
+		27AA82B1232C955D00CE609D /* HouseVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA82B0232C955D00CE609D /* HouseVO.swift */; };
+		27AA82B3232C9E7300CE609D /* HouseListItemActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA82B2232C9E7300CE609D /* HouseListItemActionDelegate.swift */; };
+		27AA82B5232CAB8800CE609D /* HouseRentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA82B4232CAB8800CE609D /* HouseRentDetailViewController.swift */; };
+		27EB0BFC232A8CF700F86DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB0BFB232A8CF700F86DF9 /* AppDelegate.swift */; };
+		27EB0BFE232A8CF700F86DF9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB0BFD232A8CF700F86DF9 /* HomeViewController.swift */; };
+		27EB0C01232A8CF700F86DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27EB0BFF232A8CF700F86DF9 /* Main.storyboard */; };
+		27EB0C03232A8CF800F86DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27EB0C02232A8CF800F86DF9 /* Assets.xcassets */; };
+		27EB0C06232A8CF800F86DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27EB0C04232A8CF800F86DF9 /* LaunchScreen.storyboard */; };
+		27EB0C12232A927E00F86DF9 /* MenuItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB0C10232A927E00F86DF9 /* MenuItemCollectionViewCell.swift */; };
+		27EB0C13232A927E00F86DF9 /* MenuItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27EB0C11232A927E00F86DF9 /* MenuItemCollectionViewCell.xib */; };
+		27EB0C17232A974600F86DF9 /* HouseItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB0C15232A974600F86DF9 /* HouseItemTableViewCell.swift */; };
+		27EB0C18232A974600F86DF9 /* HouseItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27EB0C16232A974600F86DF9 /* HouseItemTableViewCell.xib */; };
+		565112E63CC1A1B3A0DD5DEE /* Pods_HouseRentingAsgn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CF30419FE9505232889639 /* Pods_HouseRentingAsgn.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27AA82A3232C8D5100CE609D /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		27AA82A5232C8E8B00CE609D /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		27AA82A9232C947700CE609D /* HouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
+		27AA82AE232C953300CE609D /* HouseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseResponse.swift; sourceTree = "<group>"; };
+		27AA82B0232C955D00CE609D /* HouseVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseVO.swift; sourceTree = "<group>"; };
+		27AA82B2232C9E7300CE609D /* HouseListItemActionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListItemActionDelegate.swift; sourceTree = "<group>"; };
+		27AA82B4232CAB8800CE609D /* HouseRentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRentDetailViewController.swift; sourceTree = "<group>"; };
+		27EB0BF8232A8CF700F86DF9 /* HouseRentingAsgn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseRentingAsgn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27EB0BFB232A8CF700F86DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27EB0BFD232A8CF700F86DF9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		27EB0C00232A8CF700F86DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27EB0C02232A8CF800F86DF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27EB0C05232A8CF800F86DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27EB0C07232A8CF800F86DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27EB0C10232A927E00F86DF9 /* MenuItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		27EB0C11232A927E00F86DF9 /* MenuItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		27EB0C15232A974600F86DF9 /* HouseItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseItemTableViewCell.swift; sourceTree = "<group>"; };
+		27EB0C16232A974600F86DF9 /* HouseItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseItemTableViewCell.xib; sourceTree = "<group>"; };
+		33CF30419FE9505232889639 /* Pods_HouseRentingAsgn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseRentingAsgn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9873616ED2A28F1331EF397A /* Pods-HouseRentingAsgn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseRentingAsgn.debug.xcconfig"; path = "Target Support Files/Pods-HouseRentingAsgn/Pods-HouseRentingAsgn.debug.xcconfig"; sourceTree = "<group>"; };
+		CA6381CEDED12E0EED8DCB35 /* Pods-HouseRentingAsgn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseRentingAsgn.release.xcconfig"; path = "Target Support Files/Pods-HouseRentingAsgn/Pods-HouseRentingAsgn.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27EB0BF5232A8CF700F86DF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565112E63CC1A1B3A0DD5DEE /* Pods_HouseRentingAsgn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27AA82A2232C8D3D00CE609D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				27AA82A3232C8D5100CE609D /* SharedConstants.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		27AA82A7232C934F00CE609D /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				27AA82B2232C9E7300CE609D /* HouseListItemActionDelegate.swift */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		27AA82A8232C945B00CE609D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				27AA82A9232C947700CE609D /* HouseModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		27AA82AB232C950900CE609D /* data */ = {
+			isa = PBXGroup;
+			children = (
+				27AA82AC232C950D00CE609D /* vos */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		27AA82AC232C950D00CE609D /* vos */ = {
+			isa = PBXGroup;
+			children = (
+				27AA82AD232C951300CE609D /* response */,
+				27AA82B0232C955D00CE609D /* HouseVO.swift */,
+			);
+			path = vos;
+			sourceTree = "<group>";
+		};
+		27AA82AD232C951300CE609D /* response */ = {
+			isa = PBXGroup;
+			children = (
+				27AA82AE232C953300CE609D /* HouseResponse.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		27EB0BEF232A8CF700F86DF9 = {
+			isa = PBXGroup;
+			children = (
+				27EB0BFA232A8CF700F86DF9 /* HouseRentingAsgn */,
+				27EB0BF9232A8CF700F86DF9 /* Products */,
+				2C866DAA6DB2D70CBD628DE6 /* Pods */,
+				FE61955637B52D1FE3E26B4D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27EB0BF9232A8CF700F86DF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27EB0BF8232A8CF700F86DF9 /* HouseRentingAsgn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27EB0BFA232A8CF700F86DF9 /* HouseRentingAsgn */ = {
+			isa = PBXGroup;
+			children = (
+				27AA82AB232C950900CE609D /* data */,
+				27AA82A8232C945B00CE609D /* model */,
+				27AA82A7232C934F00CE609D /* delegate */,
+				27AA82A2232C8D3D00CE609D /* utils */,
+				27EB0C1A232ABAC500F86DF9 /* NetworkClient */,
+				27EB0C19232AB00800F86DF9 /* cardview */,
+				27EB0C14232A93AF00F86DF9 /* viewcontrollers */,
+				27EB0C0D232A8FF700F86DF9 /* cell */,
+				27EB0BFB232A8CF700F86DF9 /* AppDelegate.swift */,
+				27EB0BFF232A8CF700F86DF9 /* Main.storyboard */,
+				27EB0C02232A8CF800F86DF9 /* Assets.xcassets */,
+				27EB0C04232A8CF800F86DF9 /* LaunchScreen.storyboard */,
+				27EB0C07232A8CF800F86DF9 /* Info.plist */,
+			);
+			path = HouseRentingAsgn;
+			sourceTree = "<group>";
+		};
+		27EB0C0D232A8FF700F86DF9 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				27EB0C0F232A926000F86DF9 /* swift */,
+				27EB0C0E232A925A00F86DF9 /* xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		27EB0C0E232A925A00F86DF9 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				27EB0C16232A974600F86DF9 /* HouseItemTableViewCell.xib */,
+				27EB0C11232A927E00F86DF9 /* MenuItemCollectionViewCell.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		27EB0C0F232A926000F86DF9 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				27EB0C10232A927E00F86DF9 /* MenuItemCollectionViewCell.swift */,
+				27EB0C15232A974600F86DF9 /* HouseItemTableViewCell.swift */,
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		27EB0C14232A93AF00F86DF9 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				27EB0BFD232A8CF700F86DF9 /* HomeViewController.swift */,
+				27AA82B4232CAB8800CE609D /* HouseRentDetailViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		27EB0C19232AB00800F86DF9 /* cardview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cardview;
+			sourceTree = "<group>";
+		};
+		27EB0C1A232ABAC500F86DF9 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				27AA82A5232C8E8B00CE609D /* NetworkClient.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		2C866DAA6DB2D70CBD628DE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9873616ED2A28F1331EF397A /* Pods-HouseRentingAsgn.debug.xcconfig */,
+				CA6381CEDED12E0EED8DCB35 /* Pods-HouseRentingAsgn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE61955637B52D1FE3E26B4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33CF30419FE9505232889639 /* Pods_HouseRentingAsgn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27EB0BF7232A8CF700F86DF9 /* HouseRentingAsgn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27EB0C0A232A8CF800F86DF9 /* Build configuration list for PBXNativeTarget "HouseRentingAsgn" */;
+			buildPhases = (
+				4F7BD9C36FF7FBF8CDD0DE51 /* [CP] Check Pods Manifest.lock */,
+				27EB0BF4232A8CF700F86DF9 /* Sources */,
+				27EB0BF5232A8CF700F86DF9 /* Frameworks */,
+				27EB0BF6232A8CF700F86DF9 /* Resources */,
+				1C0294FDBCAE465682036910 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HouseRentingAsgn;
+			productName = HouseRentingAsgn;
+			productReference = 27EB0BF8232A8CF700F86DF9 /* HouseRentingAsgn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27EB0BF0232A8CF700F86DF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Sandi;
+				TargetAttributes = {
+					27EB0BF7232A8CF700F86DF9 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 27EB0BF3232A8CF700F86DF9 /* Build configuration list for PBXProject "HouseRentingAsgn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27EB0BEF232A8CF700F86DF9;
+			productRefGroup = 27EB0BF9232A8CF700F86DF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27EB0BF7232A8CF700F86DF9 /* HouseRentingAsgn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27EB0BF6232A8CF700F86DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27EB0C06232A8CF800F86DF9 /* LaunchScreen.storyboard in Resources */,
+				27EB0C03232A8CF800F86DF9 /* Assets.xcassets in Resources */,
+				27EB0C13232A927E00F86DF9 /* MenuItemCollectionViewCell.xib in Resources */,
+				27EB0C18232A974600F86DF9 /* HouseItemTableViewCell.xib in Resources */,
+				27EB0C01232A8CF700F86DF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C0294FDBCAE465682036910 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HouseRentingAsgn/Pods-HouseRentingAsgn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HouseRentingAsgn/Pods-HouseRentingAsgn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HouseRentingAsgn/Pods-HouseRentingAsgn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F7BD9C36FF7FBF8CDD0DE51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HouseRentingAsgn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27EB0BF4232A8CF700F86DF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27EB0BFE232A8CF700F86DF9 /* HomeViewController.swift in Sources */,
+				27AA82B5232CAB8800CE609D /* HouseRentDetailViewController.swift in Sources */,
+				27AA82AF232C953300CE609D /* HouseResponse.swift in Sources */,
+				27AA82A4232C8D5100CE609D /* SharedConstants.swift in Sources */,
+				27AA82B3232C9E7300CE609D /* HouseListItemActionDelegate.swift in Sources */,
+				27EB0C17232A974600F86DF9 /* HouseItemTableViewCell.swift in Sources */,
+				27EB0BFC232A8CF700F86DF9 /* AppDelegate.swift in Sources */,
+				27EB0C12232A927E00F86DF9 /* MenuItemCollectionViewCell.swift in Sources */,
+				27AA82AA232C947700CE609D /* HouseModel.swift in Sources */,
+				27AA82A6232C8E8B00CE609D /* NetworkClient.swift in Sources */,
+				27AA82B1232C955D00CE609D /* HouseVO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27EB0BFF232A8CF700F86DF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27EB0C00232A8CF700F86DF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27EB0C04232A8CF800F86DF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27EB0C05232A8CF800F86DF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27EB0C08232A8CF800F86DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27EB0C09232A8CF800F86DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27EB0C0B232A8CF800F86DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9873616ED2A28F1331EF397A /* Pods-HouseRentingAsgn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9H5647C7NK;
+				INFOPLIST_FILE = HouseRentingAsgn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.void.HouseRentingAsgn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27EB0C0C232A8CF800F86DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6381CEDED12E0EED8DCB35 /* Pods-HouseRentingAsgn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9H5647C7NK;
+				INFOPLIST_FILE = HouseRentingAsgn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.void.HouseRentingAsgn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27EB0BF3232A8CF700F86DF9 /* Build configuration list for PBXProject "HouseRentingAsgn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27EB0C08232A8CF800F86DF9 /* Debug */,
+				27EB0C09232A8CF800F86DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27EB0C0A232A8CF800F86DF9 /* Build configuration list for PBXNativeTarget "HouseRentingAsgn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27EB0C0B232A8CF800F86DF9 /* Debug */,
+				27EB0C0C232A8CF800F86DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27EB0BF0232A8CF700F86DF9 /* Project object */;
+}
