@@ -7,6 +7,7 @@ target 'HouseRentingAsgn' do
 
   # Pods for HouseRentingAsgn
 pod 'Alamofire'
+pod 'SwiftyJSON'
 pod 'SDWebImage'
 
 end

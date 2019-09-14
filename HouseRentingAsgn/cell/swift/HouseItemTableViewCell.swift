@@ -36,9 +36,18 @@ class HouseItemTableViewCell: UITableViewCell {
                 
                 let houseImage = house.houseImageUrl
                 imgHouse.sd_setImage(with: URL(string: houseImage ?? ""), placeholderImage: UIImage(named: "placeholder"))
-                labelPrice.text = house.price?.description
-                labelLocation.text = house.address
-                labelArea.text = house.squareFeet?.description
+                
+                if let price = house.price?.description {
+                    labelPrice.text = "$ \(price)"
+                }
+                if let location = house.address {
+                    labelLocation.text = location
+                }
+                if let sqft = house.squareFeet?.description {
+                   labelArea.text = "\(sqft) sqft"
+                    
+                }
+                
             }
         }
     }
@@ -48,6 +57,7 @@ class HouseItemTableViewCell: UITableViewCell {
         self.selectionStyle = .none
         viewGoToDetail.layer.cornerRadius = viewGoToDetail.bounds.height / 2
         imgGoToDetail.layer.cornerRadius = imgGoToDetail.bounds.height / 2
+        
         viewPrice.layer.cornerRadius = 10
         imgHouse.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         imgHouse.layer.cornerRadius = 10
@@ -69,5 +79,5 @@ class HouseItemTableViewCell: UITableViewCell {
     }
     
     @objc func onClickViewDetail() {
-        delegate?.onClickHouseItemDetail()    }
+        delegate?.onClickHouseItemDetail(data: house)    }
 }

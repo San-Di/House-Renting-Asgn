@@ -22,12 +22,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var viewSearchField: UIView!
     
     let numberOfItemPerRow: CGFloat = 3
-    let spacingPerItem: CGFloat = 8
+    let spacingPerItem: CGFloat = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getHouseList()
         txtSearchField.borderStyle = .none
-        getMovieList()
         menuCollectionView.delegate = self
         menuCollectionView.dataSource = self
         
@@ -42,7 +42,6 @@ class HomeViewController: UIViewController {
         
         let itemWidth: CGFloat = ( self.view.bounds.width  - totalPadding ) / numberOfItemPerRow
         let itemHeight: CGFloat = 100
-        print("width \(itemWidth) height \(itemHeight)")
         let layout = menuCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
         layout.minimumLineSpacing = 10
@@ -51,13 +50,13 @@ class HomeViewController: UIViewController {
         menuCollectionView.isScrollEnabled = false
     }
   
-    private func getMovieList() {
-//        self.showProgress(message: "Loading ... ")
+    private func getHouseList() {
         HouseModel.shared().apiGetHouseList(success: {
             print("success")
-        }, failure: { (err) in
-            print("error")
-        })
+            self.houseListTableView.reloadData()
+        }) { (err) in
+            print("err \(err)")
+        }
     }
 
 }
@@ -100,12 +99,13 @@ extension HomeViewController: UITableViewDelegate{
 
 extension HomeViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return HouseModel.shared().houseResponse.data?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: HouseItemTableViewCell.self), for: indexPath) as! HouseItemTableViewCell
-        cell.house = HouseModel.shared().houseResponse.results?[indexPath.row] ?? HouseVO()
+        cell.house = HouseModel.shared().houseResponse.data?[indexPath.row]
+        print("House \(cell.house)" )
         cell.delegate = self
         return cell
     }
@@ -115,11 +115,12 @@ extension HomeViewController: UITableViewDataSource{
 
 
 extension HomeViewController: HouseListItemActionDelegate{
-    func onClickHouseItemDetail() {
+    func onClickHouseItemDetail(data: HouseVO?) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(withIdentifier: HouseRentDetailViewController.identifier) as! HouseRentDetailViewController
         
+        vc.mHouse = data
         self.present(vc, animated: true)
         
     }

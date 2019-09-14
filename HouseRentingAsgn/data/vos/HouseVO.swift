@@ -10,13 +10,26 @@ import Foundation
 
 struct HouseVO: Codable {
     
-    var id: Double?
-    var name : String?
-    var houseImageUrl: String?
-    var description: String?
-    var price: String?
-    var address : String?
-    var squareFeet : String?
-    var latitude : Double?
-    var longtitude: Double?
+    let id : Int?
+    let houseImageUrl : String?
+    let name : String?
+    let description : String?
+    let price : Double?
+    let address : String?
+    let squareFeet : Int?
+    let latitude : Double?
+    let longitude : Double?
+    
+    enum CodingKeys: String, CodingKey {
+        
+        case id = "id"
+        case houseImageUrl = "house_image_url"
+        case name = "name"
+        case description = "description"
+        case price = "price"
+        case address = "address"
+        case squareFeet = "square_feet"
+        case latitude = "latitude"
+        case longitude = "longitude"
+    }
 }
