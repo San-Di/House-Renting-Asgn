@@ -13,6 +13,8 @@ struct BaseResponse: Codable {
     var code: Int?
     var message: String?
     
+    var error: ErrorVO?
+    
     func isResponseOK() -> Bool {
         if let code = code, code > 0 {
             if code == 200 {

@@ -27,6 +27,7 @@ class HouseRentDetailViewController: UIViewController {
     
     @IBOutlet weak var labelHouseDescription: UILabel!
     
+    @IBOutlet weak var viewNavigate: CardView!
     @IBOutlet weak var labelPrice: UILabel!
     static let identifier = "HouseRentDetailViewController"
     
@@ -35,6 +36,7 @@ class HouseRentDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        viewNavigate.cornerRadius = viewNavigate.bounds.height/2
         print("House ====< \( mHouse)")
        txtSearchField.borderStyle = .none
         

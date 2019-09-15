@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
     static let identifier = "HomeViewController"
     
@@ -53,9 +53,10 @@ class HomeViewController: UIViewController {
     private func getHouseList() {
         HouseModel.shared().apiGetHouseList(success: {
             print("success")
+//            self.showAlertDialog(message: "Success")
             self.houseListTableView.reloadData()
         }) { (err) in
-            print("err \(err)")
+            self.showAlertDialog(message: err)
         }
     }
 

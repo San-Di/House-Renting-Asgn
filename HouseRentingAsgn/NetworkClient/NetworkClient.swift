@@ -69,7 +69,7 @@ class NetworkClient {
                         let data = json["data"] // now this time ( we index data from => ["data"]
                         success(data)
                     }else {
-                        failure("")
+                        failure(baseResponse.error?.message ?? "")
                     }
                 }catch let jsonErr {
                     failure(jsonErr.localizedDescription)
@@ -103,7 +103,7 @@ class NetworkClient {
                         let data = json["data"] // now this time ( we index data from => ["data"]
                         success(data)
                     }else {
-                        failure("")
+                        failure(baseResponse.error?.message ?? "")
                     }
                 }catch let jsonErr {
                     failure(jsonErr.localizedDescription)
@@ -137,7 +137,7 @@ class NetworkClient {
                         let data = json["data"] // now this time ( we index data from => ["data"]
                         success(data)
                     }else {
-                        failure("")
+                        failure(baseResponse.error?.message ?? "")
                     }
                 }catch let jsonErr {
                     failure(jsonErr.localizedDescription)
